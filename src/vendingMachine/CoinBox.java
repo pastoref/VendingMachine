@@ -36,9 +36,6 @@ public class CoinBox {
 		centsInserted += 200;
 	}
 	
-	public void add(int cents){
-		centsInserted += cents;
-	}
 	
 	/**
 	 * Consume the given amount of cents. Returns false if the amount of cents already inserted is lower than the given amount.
@@ -58,7 +55,7 @@ public class CoinBox {
 		
 		centsInserted -= cents;
 		
-		assert( centsInserted >= 0 );
+		//assert( centsInserted >= 0 );
 		return true;
 	}
 	
