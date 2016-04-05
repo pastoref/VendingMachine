@@ -1,0 +1,52 @@
+
+Test Case 1  		<single>
+   Partecipants :  empty
+
+
+Test Case 2  		<single>
+   Meetings :  none
+
+
+Test Case 3  		<single>  (follows [if])
+   SharedMeetings :  half
+
+
+Test Case 4  		<single>  (follows [if])
+   SharedMeetings :  all
+
+
+Test Case 5  		<single>  (follows [if])
+   SharedMeetings :  moreThanHalf
+
+
+Test Case 6  		<single>  (follows [if])
+   SharedMeetings :  lessThanHalf
+
+
+Test Case 7  		<single>  (follows [if])
+   SharedMeetings :  none
+
+
+Test Case 8  		<single>  (follows [if])
+   SuggestedInPartecipats :  yes
+
+
+Test Case 9  		<single>  (follows [if])
+   SuggestedBy :  more partecipants
+
+
+Test Case 10 		(Key = 2.2.0.2.3.)
+   Partecipants           :  one
+   Meetings               :  many
+   SharedMeetings         :  <n/a>
+   SuggestedInPartecipats :  no
+   SuggestedBy            :  not suggested
+
+
+Test Case 11 		(Key = 3.2.0.2.3.)
+   Partecipants           :  more
+   Meetings               :  many
+   SharedMeetings         :  <n/a>
+   SuggestedInPartecipats :  no
+   SuggestedBy            :  not suggested
+

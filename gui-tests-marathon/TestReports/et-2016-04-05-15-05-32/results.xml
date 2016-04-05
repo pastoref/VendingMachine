@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<test projectname='VM-GUI-Tests' reportdir='et-2016-04-05-15-05-32' >
+<testsuite name="Marathon Test" >
+  <testcase name="et-2016-04-05-15-05-32" status="0" time="73.567" >
+  </testcase>
+</testsuite>
+</test>

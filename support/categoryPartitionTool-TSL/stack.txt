@@ -1,0 +1,14 @@
+
+Environments:
+	StackSize:
+		empty.
+		full.
+		with elements.
+	Push:
+		0
+		1
+		N
+	Pop:
+		0
+		1
+		N	

@@ -1,0 +1,19 @@
+
+Object state:
+	Cents inserted:
+	Zero.	[property noCash]
+	Many.	
+
+Invocations:
+	Number of consume calls:
+	One.	[property consuming]
+	Many.	[property consuming]
+	
+	Cents to consume:
+	Zero.	[single]	[if !noCash && consuming]
+	Same as inserted.	[if consuming]
+	More than inserted.	[if consuming]
+	Less than inserted.	[if !noCash && consuming]
+	Negative. [error]	[if consuming]
+
+

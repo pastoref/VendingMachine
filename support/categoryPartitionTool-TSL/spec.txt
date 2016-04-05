@@ -1,0 +1,27 @@
+
+Parameters:
+	Partecipants:
+		empty.	[single][property Empty]
+		one.	
+		more.	
+
+Environment:
+	Meetings:
+		none.	[single]
+		many.	[property Many]
+
+	SharedMeetings:
+		half.	[if !Empty][single][property result]
+		all.	[if !Empty][single][property result]
+		moreThanHalf.	[if !Empty][single][property result]
+		lessThanHalf.	[if !Empty][single]
+		none.	[if !Empty][single]
+
+	SuggestedInPartecipats:
+		yes.	[if result][single]
+		no.
+
+	SuggestedBy:
+		one partecipant.	[if result && !Empty]
+		more partecipants.	[if result && !Empty][single]
+		not suggested.		[if !result]

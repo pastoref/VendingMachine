@@ -1,0 +1,68 @@
+
+Test Case 1  		<single>
+   Cents to consume :  Zero
+
+
+Test Case 2  		<error>
+   Cents to consume :  Negative
+
+
+Test Case 3  		(Key = 1.1.2.)
+   Cents inserted          :  Zero
+   Number of consume calls :  One
+   Cents to consume        :  Same as inserted
+
+
+Test Case 4  		(Key = 1.1.3.)
+   Cents inserted          :  Zero
+   Number of consume calls :  One
+   Cents to consume        :  More than inserted
+
+
+Test Case 5  		(Key = 1.2.2.)
+   Cents inserted          :  Zero
+   Number of consume calls :  Many
+   Cents to consume        :  Same as inserted
+
+
+Test Case 6  		(Key = 1.2.3.)
+   Cents inserted          :  Zero
+   Number of consume calls :  Many
+   Cents to consume        :  More than inserted
+
+
+Test Case 7  		(Key = 2.1.2.)
+   Cents inserted          :  Many
+   Number of consume calls :  One
+   Cents to consume        :  Same as inserted
+
+
+Test Case 8  		(Key = 2.1.3.)
+   Cents inserted          :  Many
+   Number of consume calls :  One
+   Cents to consume        :  More than inserted
+
+
+Test Case 9  		(Key = 2.1.4.)
+   Cents inserted          :  Many
+   Number of consume calls :  One
+   Cents to consume        :  Less than inserted
+
+
+Test Case 10 		(Key = 2.2.2.)
+   Cents inserted          :  Many
+   Number of consume calls :  Many
+   Cents to consume        :  Same as inserted
+
+
+Test Case 11 		(Key = 2.2.3.)
+   Cents inserted          :  Many
+   Number of consume calls :  Many
+   Cents to consume        :  More than inserted
+
+
+Test Case 12 		(Key = 2.2.4.)
+   Cents inserted          :  Many
+   Number of consume calls :  Many
+   Cents to consume        :  Less than inserted
+

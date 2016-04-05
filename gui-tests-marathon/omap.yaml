@@ -1,0 +1,47 @@
+- !!net.sourceforge.marathon.objectmap.OMapContainer
+    containerGeneralProperties:
+    - {name: title, value: HardwareCoinBoxSimulator}
+    - {name: enabled, value: 'true'}
+    - {name: instanceOf, value: javax.swing.JFrame}
+    - {name: accessibleContext.accessibleName, value: HardwareCoinBoxSimulator}
+    - {name: size, value: '[width=100,height=300]'}
+    - {name: oMapClassName, value: vendingMachine.VendingMachineDriver$1}
+    - {name: name, value: frame0}
+    - {name: position, value: '[x=400,y=23]'}
+    - {name: component.class.name, value: vendingMachine.VendingMachineDriver$1}
+    containerRecognitionProperties:
+    - {method: equals, name: oMapClassName, value: vendingMachine.VendingMachineDriver$1}
+    containerTitles: [HardwareCoinBoxSimulator]
+    fileName: HardwareCoinBoxSimulator_7924228871087786070.yaml
+- !!net.sourceforge.marathon.objectmap.OMapContainer
+    containerGeneralProperties:
+    - {name: component.class.simpleName, value: VMFrame}
+    - {name: title, value: Vending Machine}
+    - {name: enabled, value: 'true'}
+    - {name: instanceOf, value: javax.swing.JFrame}
+    - {name: accessibleContext.accessibleName, value: Vending Machine}
+    - {name: size, value: '[width=250,height=400]'}
+    - {name: oMapClassName, value: vendingMachine.gui.VMFrame}
+    - {name: name, value: frame2}
+    - {name: position, value: '[x=0,y=23]'}
+    - {name: component.class.name, value: vendingMachine.gui.VMFrame}
+    - {name: oMapClassSimpleName, value: VMFrame}
+    containerRecognitionProperties:
+    - {method: equals, name: oMapClassName, value: vendingMachine.gui.VMFrame}
+    containerTitles: [Vending Machine]
+    fileName: Vending Machine_4767804133631828907.yaml
+- !!net.sourceforge.marathon.objectmap.OMapContainer
+    containerGeneralProperties:
+    - {name: title, value: DispenserStub}
+    - {name: enabled, value: 'true'}
+    - {name: instanceOf, value: javax.swing.JFrame}
+    - {name: accessibleContext.accessibleName, value: DispenserStub}
+    - {name: size, value: '[width=200,height=300]'}
+    - {name: oMapClassName, value: vendingMachine.DispenserGUIStub$1}
+    - {name: name, value: frame0}
+    - {name: position, value: '[x=600,y=23]'}
+    - {name: component.class.name, value: vendingMachine.DispenserGUIStub$1}
+    containerRecognitionProperties:
+    - {method: equals, name: oMapClassName, value: vendingMachine.DispenserGUIStub$1}
+    containerTitles: [DispenserStub]
+    fileName: DispenserStub_3184057755899489930.yaml

@@ -1,0 +1,16 @@
+
+Object state:
+	Line items:
+	Zero.	[error]
+	One.	[single]
+	Many.
+
+Invocations:
+	Requested product:
+	Available.
+	Out of stock.
+	Wrong position.
+	Price not configured.
+	Not enough coins.	
+
+

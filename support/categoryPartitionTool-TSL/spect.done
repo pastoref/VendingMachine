@@ -1,0 +1,55 @@
+
+testSuggestPartecipants_NoPartecipants_SomeAppointments
+Test Case 1  		<single>
+   Partecipants :  empty
+
+
+testSuggestPartecipants_NoPartecipants_NoAppointments
+Test Case 2  		<single>
+   Meetings :  none
+
+testSuggestPartecipants_OnePartecipant_OneSuggested_HalfShared
+Test Case 3  		<single>  (follows [if])
+   SharedMeetings :  half
+
+
+testSuggestPartecipants_OnePartecipant_OneSuggested_AllShared
+Test Case 4  		<single>  (follows [if])
+   SharedMeetings :  all
+
+testSuggestPartecipants_OnePartecipant_OneSuggested_MoreHalfShared
+Test Case 5  		<single>  (follows [if])
+   SharedMeetings :  moreThanHalf
+
+testSuggestPartecipants_OnePartecipant_NoSuggested_LessHalfShared
+Test Case 6  		<single>  (follows [if])
+   SharedMeetings :  lessThanHalf
+
+testSuggestPartecipants_OnePartecipant_NoSharedMeetings
+Test Case 7  		<single>  (follows [if])
+   SharedMeetings :  none
+
+testSuggestPartecipants_ManyPartecipants_SuggestedAlreadyPartecipating
+Test Case 8  		<single>
+   SuggestedInPartecipats :  yes
+
+testSuggestPartecipants_ManyPartecipants_SuggestedByTwo
+Test Case 9  		<single>  (follows [if])
+   SuggestedBy :  more partecipants
+
+
+Test Case 10 		(Key = 2.2.0.2.1.)
+   Partecipants           :  one
+   Meetings               :  many
+   SharedMeetings         :  <n/a>
+   SuggestedInPartecipats :  no
+   SuggestedBy            :  one partecipant
+
+testSuggestPartecipants_ManyPartecipants_NoSuggested
+Test Case 11 		(Key = 3.2.0.2.1.)
+   Partecipants           :  more
+   Meetings               :  many
+   SharedMeetings         :  <n/a>
+   SuggestedInPartecipats :  no
+   SuggestedBy            :  one partecipant
+

@@ -1,0 +1,94 @@
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: buttonIconFile, value: img/0.gif}
+    - {method: equals, name: type, value: JButton}
+    generalProperties:
+    - {name: component.class.simpleName, value: JButton}
+    - {name: type, value: JButton}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '10'}
+    - {name: instanceOf, value: javax.swing.JButton}
+    - {name: component.class.name, value: javax.swing.JButton}
+    - {name: buttonIconFile, value: img/0.gif}
+    - {name: iconFile, value: img/0.gif}
+    - {name: layoutData.y, value: '1.0'}
+    - {name: layoutData.x, value: '3.0'}
+    - {name: size, value: '[width=71,height=67]'}
+    - {name: position, value: '[x=89,y=309]'}
+    name: img/0.gif
+    used: true
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: fieldName, value: display}
+    - {method: equals, name: type, value: JTextField}
+    generalProperties:
+    - {name: fieldName, value: display}
+    - {name: component.class.simpleName, value: JTextField}
+    - {name: type, value: JTextField}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '0'}
+    - {name: instanceOf, value: javax.swing.JTextField}
+    - {name: component.class.name, value: javax.swing.JTextField}
+    - {name: size, value: '[width=213,height=58]'}
+    - {name: position, value: '[x=18,y=50]'}
+    name: display
+    used: true
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: buttonIconFile, value: img/1.gif}
+    - {method: equals, name: type, value: JButton}
+    generalProperties:
+    - {name: component.class.simpleName, value: JButton}
+    - {name: type, value: JButton}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '0'}
+    - {name: instanceOf, value: javax.swing.JButton}
+    - {name: component.class.name, value: javax.swing.JButton}
+    - {name: buttonIconFile, value: img/1.gif}
+    - {name: iconFile, value: img/1.gif}
+    - {name: layoutData.y, value: '0.0'}
+    - {name: layoutData.x, value: '0.0'}
+    - {name: size, value: '[width=71,height=67]'}
+    - {name: position, value: '[x=18,y=108]'}
+    name: img/1.gif
+    used: true
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: fieldName, value: buyButton}
+    - {method: equals, name: type, value: JButton}
+    generalProperties:
+    - {name: fieldName, value: buyButton}
+    - {name: component.class.simpleName, value: JButton}
+    - {name: type, value: JButton}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '11'}
+    - {name: instanceOf, value: javax.swing.JButton}
+    - {name: component.class.name, value: javax.swing.JButton}
+    - {name: buttonIconFile, value: img/ok.gif}
+    - {name: iconFile, value: img/ok.gif}
+    - {name: layoutData.y, value: '2.0'}
+    - {name: layoutData.x, value: '3.0'}
+    - {name: size, value: '[width=71,height=67]'}
+    - {name: position, value: '[x=160,y=309]'}
+    name: img/ok.gif
+    used: true
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: fieldName, value: clearButton}
+    - {method: equals, name: type, value: JButton}
+    generalProperties:
+    - {name: fieldName, value: clearButton}
+    - {name: component.class.simpleName, value: JButton}
+    - {name: type, value: JButton}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '9'}
+    - {name: instanceOf, value: javax.swing.JButton}
+    - {name: component.class.name, value: javax.swing.JButton}
+    - {name: buttonIconFile, value: img/ce.gif}
+    - {name: iconFile, value: img/ce.gif}
+    - {name: layoutData.y, value: '0.0'}
+    - {name: layoutData.x, value: '3.0'}
+    - {name: size, value: '[width=71,height=67]'}
+    - {name: position, value: '[x=18,y=309]'}
+    name: img/ce.gif
+    used: true

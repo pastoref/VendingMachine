@@ -1,0 +1,13 @@
+
+Object state:
+	Cents inserted:
+	Zero.	[property noCash]
+	Many.	
+
+Invocations:
+	Number of calls to returnChange:
+	One.	
+	Many.
+
+
+

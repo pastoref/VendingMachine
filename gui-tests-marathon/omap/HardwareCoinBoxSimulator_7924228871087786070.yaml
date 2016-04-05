@@ -1,0 +1,38 @@
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: fieldName, value: display}
+    - {method: equals, name: type, value: JTextField}
+    generalProperties:
+    - {name: fieldName, value: display}
+    - {name: component.class.simpleName, value: JTextField}
+    - {name: type, value: JTextField}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '0'}
+    - {name: instanceOf, value: javax.swing.JTextField}
+    - {name: component.class.name, value: javax.swing.JTextField}
+    - {name: size, value: '[width=91,height=26]'}
+    - {name: position, value: '[x=405,y=50]'}
+    name: display
+    used: true
+- !!net.sourceforge.marathon.objectmap.OMapComponent
+    componentRecognitionProperties:
+    - {method: equals, name: actionCommand, value: '0.20'}
+    - {method: equals, name: type, value: JButton}
+    generalProperties:
+    - {name: component.class.simpleName, value: JButton}
+    - {name: type, value: JButton}
+    - {name: enabled, value: 'true'}
+    - {name: indexOfType, value: '2'}
+    - {name: instanceOf, value: javax.swing.JButton}
+    - {name: actionCommand, value: '0.20'}
+    - {name: component.class.name, value: javax.swing.JButton}
+    - {name: buttonText, value: '0.20'}
+    - {name: cText, value: '0.20'}
+    - {name: layoutData.y, value: '0.0'}
+    - {name: layoutData.x, value: '2.0'}
+    - {name: accessibleContext.accessibleName, value: '0.20'}
+    - {name: size, value: '[width=91,height=29]'}
+    - {name: accessibleName, value: '0.20'}
+    - {name: position, value: '[x=405,y=134]'}
+    name: '0.20'
+    used: true
