@@ -12,7 +12,7 @@ import vendingMachine.gui.VMFrame;
  * real hardware using GUI components.
  * 
  * This example shows that the GUI test allows to detect that prices are not
- * sent by the vending manager to the dispenser.
+ * as doubles, so they are shown as 10.00 20.00 ... 120.00 instead of 0.10 0.20 ...
  * 
  * @author Fabrizio Pastore - pastore@disco.unimib.it
  *
@@ -42,7 +42,7 @@ public class VendingMachineDriver {
 		vm.setPrice(1, 0, 30);
 		vm.setPrice(1, 1, 40);
 		vm.setPrice(2, 0, 60);
-		vm.setPrice(2, 1, 60);
+		vm.setPrice(2, 1, 120);
 		
 		
 		

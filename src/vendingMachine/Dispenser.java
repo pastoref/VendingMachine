@@ -46,5 +46,5 @@ public interface Dispenser {
 	 * 
 	 * @return
 	 */
-	public void setPrice(int row, int column, int priceInCents);
+	public void setPrice(int row, int column, double price);
 }

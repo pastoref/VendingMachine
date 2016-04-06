@@ -100,10 +100,9 @@ public class DispenserGUIStub implements Dispenser {
 	}
 
 	@Override
-	public void setPrice(int row, int column, int priceInCents) {
-		int euro = priceInCents / 100;
-		int cents = priceInCents % 100;
-		prices[columns*row+column].setText(euro+"."+cents);
+	public void setPrice(int row, int column, double price) {
+		String text = String.format("%1$,.2f", price);
+		prices[columns*row+column].setText(text);
 	}
 
 }

@@ -117,6 +117,12 @@ public class VendingManagerTest {
 		});
 		
 		VendingManager vm = new VendingManager(coinBox, dispenser);
+		
+		context.checking(new Expectations(){
+			{
+				oneOf(dispenser).setPrice(0, 0, 70); //we are going to set the price to be shown on the dispenser
+			}
+		});
 		vm.setPrice(0, 0, 70);
 		
 		context.checking(new Expectations(){
@@ -132,58 +138,7 @@ public class VendingManagerTest {
 	}
 	
 	
-	@Test
-	public void test02_OneItem_Available_Other() throws NotSoldException {
-		context.checking(new Expectations(){
-			{
-			oneOf(dispenser).getRows(); will(returnValue(1));
-			oneOf(dispenser).getColumns(); will(returnValue(1));
-			}
-		});
-		
-		VendingManager vm = new VendingManager(coinBox, dispenser);
-		vm.setPrice(0, 0, 70);
-		
-		context.checking(new Expectations(){
-			{
-				//The order does not count
-				//oneOf(dispenser).isEmpty(0, 0); will(returnValue(false));
-				oneOf(coinBox).consume(70); will(returnValue(true));
-				oneOf(dispenser).dispense(0, 0); will(returnValue(true));
-				oneOf(dispenser).isEmpty(0, 0); will(returnValue(false));
-			}
-		});
-		
-		vm.buy(0, 0);
-		
-	}
-	
-	
-	@Auto Sequence vmCalls;
-	@Test
-	public void test02_OneItem_Available_Better() throws NotSoldException {
-		context.checking(new Expectations(){
-			{
-			oneOf(dispenser).getRows(); will(returnValue(1)); inSequence(vmCalls);
-			oneOf(dispenser).getColumns(); will(returnValue(1)); inSequence(vmCalls);
-			}
-		});
-		
-		VendingManager vm = new VendingManager(coinBox, dispenser);
-		vm.setPrice(0, 0, 70);
-		
-		context.checking(new Expectations(){
-			{
-				//The order does not count
-				oneOf(dispenser).isEmpty(0, 0); will(returnValue(false)); inSequence(vmCalls);
-				oneOf(coinBox).consume(70); will(returnValue(true)); inSequence(vmCalls);
-				oneOf(dispenser).dispense(0, 0); will(returnValue(true)); inSequence(vmCalls);
-			}
-		});
-		
-		vm.buy(0, 0);
-		
-	}
+
 	
 	
 	
@@ -193,6 +148,7 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(12).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
@@ -223,6 +179,7 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(12).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
@@ -249,6 +206,7 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(12).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
@@ -275,6 +233,7 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(12).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
@@ -309,6 +268,7 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(12).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
@@ -340,6 +300,7 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(11).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
@@ -372,12 +333,13 @@ public class VendingManagerTest {
 			{
 			oneOf(dispenser).getRows(); will(returnValue(3));
 			oneOf(dispenser).getColumns(); will(returnValue(4));
+			exactly(12).of(dispenser).setPrice(with(any(Integer.class)), with(any(Integer.class)), with(any(Double.class)) ); //many calls done
 			}
 		});
 		
 		VendingManager vm = new VendingManager(coinBox, dispenser);
 		vm.setPrice(0, 0, 70); vm.setPrice(0, 1, 70); vm.setPrice(0, 2, 70); vm.setPrice(0, 3, 70);
-								vm.setPrice(1, 1, 50); vm.setPrice(1, 2, 175); vm.setPrice(1, 3, 70);
+		vm.setPrice(1, 0, 70); vm.setPrice(1, 1, 50); vm.setPrice(1, 2, 175); vm.setPrice(1, 3, 70);
 		vm.setPrice(2, 0, 70); vm.setPrice(2, 1, 70); vm.setPrice(2, 2, 90); vm.setPrice(2, 3, 110);
 		
 		

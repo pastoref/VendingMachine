@@ -66,7 +66,7 @@ public class VendingManager {
 		
 		priceMatrix[row][column] = priceInCents;
 		
-		//dispenser.setPrice(row, column, priceInCents); //FAULT, this call is missing
+		dispenser.setPrice(row, column, priceInCents); //FAULT, should pass price in cents
 	}
 	
 	/**
