@@ -11,13 +11,8 @@ import org.junit.Test;
 
 /**
  * This class contains test cases for the Vending Machine class
- * implemented to satisfy the bytecode branch condition of EclEmma
- * which subsumes basic condition coverage.
- 
- * 
- * EclEmma implements branch condition coverage at the bytecode level,
- * this subsumes basic condition coverage (in Java bytecode each compound condition
- * is transformed into a set of goto statements that link basic conditions).
+ * implemented to satisfy the bytecode branch condition of EclEmma.
+ * EclEmma works at the bytecode level, so each basic condition is translated into a branch.
  * 
  * @author Fabrizio Pastore - pastore@disco.unimib.it
  *
@@ -48,7 +43,6 @@ public class VendingManagerTest_BasicConditionEvaluatedAdequacy {
 	 * line 135:   if ( row >= rows || column >= columns ){			"column >= columns" is evaluated true
 	 * 		pay ATTENTION that to "evaluate" this condition, the condition "row >= rows" must be false
 	 * 
-	 *  EclEmma does not implement basic-condition coverage but compound condition coverage 
 	 */
 	@Test(expected = IllegalArgumentException.class)
 	public void test_invalid_column_to_setPrice() {
